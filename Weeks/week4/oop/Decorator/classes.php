@@ -19,7 +19,13 @@ class Player
 		$this -> Data = $info;	
 	}
 }
-class Player_Str_Decorate
+
+abstract class Player_Decorator
+{
+	abstract public function Add($int);
+
+}
+class Player_Str_Decorate extends Player_Decorator
 {
 	/**
 *Method Name: __construct
@@ -32,13 +38,29 @@ class Player_Str_Decorate
 	public function __construct(Player $p)
 	{
 		$this->Player = $p;
-		$this->Player->Data['str'] +=5;
+		
 	}
 
+// Revision:
+//Added the  add function to each class to allow for a easier monitoring and useability
+
+/**
+*Method Name: Add()
+*
+*Method description:Add method to increate a players 'str' stat
+*@access public
+Accepts: A int value with the increate
+*@return NA
+*/
+
+	public function Add($int)
+	{
+		$this->Player->Data['str'] +=$int;
+	}
 
 }
 
-class Player_Dex_Decorate
+class Player_Dex_Decorate  extends Player_Decorator
 {
 /**
 *Method Name: __construct
@@ -48,21 +70,20 @@ class Player_Dex_Decorate
 *@return N.A This is a constructor.
 *
 */
-*/
+
 	public function __construct(Player $p)
 	{
 		$this->Player = $p;
 		
 	}
 	
-		/**
+/**
 *Method Name: Add()
 *
-*Method description: Used to increate the players Dex stat
+*Method description:Add method to increate a players 'dex' stat
 *@access public
-*@pEm cois
-*@return N/A
-*
+Accepts: A int value with the increate
+*@return NA
 */
 	public function Add($int)
 	{
