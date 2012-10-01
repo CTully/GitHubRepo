@@ -19,7 +19,11 @@ class MyClass
 	echo "MyClass:: IterateVisible:\n";
 		foreach($this as $key => $value)
 		{
-		 print "$key => $Value\n";
+		  print "$key => $value\n";
 		}//end foreach
 	}
+	
+	
+	
+	
 }
