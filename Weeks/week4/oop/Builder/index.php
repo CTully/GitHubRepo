@@ -2,7 +2,19 @@
 ini_set('display_errors','on');
 error_reporting(E_ALL | E_STRICT);
 
-require_once 'myClasses.php';
+/*
+* NOTE: As a result of my poor reading skill's I oringinally had the files workong on
+*one index and one classes file, I have since moved every thing. In accou
+*/
+
+require_once 'HTMLPage.php';
+require_once 'abstractClassBuilder.php';
+require_once 'abstractPageBuilder.php';
+require_once 'HTMLPage.php';
+require_once 'HTMLPageBuilder.php';
+require_once 'HTMLPageDirector.php';
+
+
  echo 'BEGIN TESTING BUILDER PATTERN';
   writeln('');
 

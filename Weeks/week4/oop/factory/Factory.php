@@ -1,6 +1,19 @@
 <?php
 
+
+/* Class: Factory
+*Defination:  to implement the concept of factories and deals with the problem of 
+*creating objects (products) without specifying the exact class of object that will be created.
+*
+*
+*/
 abstract class Factory {
+
+/* Method:Create
+*Accepts: empty class
+*returns: the method name and the line.
+* 
+*/
 	public static function create($class = null) {
 		if( !$class ){
 		//handle null value here

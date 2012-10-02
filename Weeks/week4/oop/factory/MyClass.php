@@ -23,10 +23,10 @@ class MyClass extends Factory{
 	/**
 *Method Name: factory
 *
-*Method description:
-*@access public
+*Method description Constructor Method
+*@access protected
 *@pEm cois
-*@return MyClass returns a new instance of MyClass.
+*@return creates the class specific object
 *
 */
 	
@@ -38,10 +38,10 @@ class MyClass extends Factory{
 	/**
 *Method Name: factory
 *
-*Method description:
+*Method description: Desctuctor method
 *@access public
 *@pEm cois
-*@return MyClass returns a new instance of MyClass.
+*@return 
 *
 */
 	public function __destruct(){
