@@ -7,13 +7,13 @@
 * Created: 09/10/12
 * Revisions:
 */
-
+	defined('IN_LIBRARY') or exit;
 
 namespace Tully
 {
 	class FormEventHandler
 	{
-		defined('IN_LIBRARY') or exit;
+	
 	
 	// Function: __construct()
 		// Returns:

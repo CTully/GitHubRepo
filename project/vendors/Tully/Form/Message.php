@@ -8,12 +8,12 @@
 * Revisions:
 */
 
-
+defined('IN_LIBRARY') or exit;
 namespace Tully
 {
 	class Message 
 	{
-		defined('IN_LIBRARY') or exit;
+		
 	//class variables
 	private $_type = 0;
 	private $_message = '';
@@ -67,10 +67,10 @@ namespace Tully
 		// Returns:
 		// Accepts:
 		// Access:	
-			//not sure about this one if it's correct or not (copied from View)
+			
 			final public function toString()
         {
-            return $this->contents(true);
+            return $this->message(true);
         }
 			
 }

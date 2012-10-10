@@ -7,16 +7,17 @@
 * Created: 
 * Revisions:
 */
+	defined('IN_LIBRARY') or exit;
 
 namespace Tully {
 
 	class AbstractProcessor extends Object
 	{
-	defined('IN_LIBRARY') or exit;
+
 
 		//protected class variables
 		//not sure if this part is correct or not
-		protected $_field = AbstractField();
+		protected $_field = array();
 
 		// Function: __construct()
 		// Returns:
@@ -33,6 +34,14 @@ namespace Tully {
 		// Access:
 		public static function process($return = false)
 		{
+				if()
+				{
+
+				}
+				else
+				{
+
+				}
 
 		}
 

@@ -1,29 +1,33 @@
 <?php
-
-/*
-* Class: Label
-* NameSpace: Tully
-* Purpose:
-* Created: 
-* Revisions:
-*/
 defined('IN_LIBRARY') or exit;
 
-namespace Tully {
+/*
+* Class: FieldSet
+* NameSpace: Tully
+* Purpose: 
+* Created: 09/10/12
+* Revisions:
+*/
 
+namespace Tully{
 
- class Label extends Object
+	class FieldSet extends AbstractField
 	{
 	
-
-		//protected class variables
-		//not sure if this part is correct or not
-		protected $_field = AbstractField();
+	//variables
+	//
+	
+		protected $_field = array();
 		protected $_text;
 		protected $_description;
 		protected $_view;
-
-		// Function: __construct()
+	
+	public function __construct($_field)
+	{
+	parent::__construct($_field);
+	}//end construct
+	
+	// Function: __construct()
 		// Returns:
 		// Accepts:
 		// Access:
@@ -54,12 +58,19 @@ namespace Tully {
 		// Function: toString()
 		// Returns:
 		// Accepts:
-		// Access:
-		protected static function toString()
-		{
-
+		// Access:	
+			
+			final public function toString()
+        {
+            return $this->message(true);
+        }
 		}
 
 
 	}
+}
+	
+	}
+
+
 }

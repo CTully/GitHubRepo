@@ -7,12 +7,13 @@
 * Created: 09/10/12
 * Revisions:
 */
+	defined('IN_LIBRARY') or exit;
 
 namespace Tully
 {
 	class AbstractValidator
 	{
-		defined('IN_LIBRARY') or exit;
+	
 	 //class variables
 	 protected static $_has_validator =false;
 	 protected static $_is_valid=false

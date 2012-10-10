@@ -18,20 +18,22 @@ namespace Tully
 * Created: 09/10/12
 * Revisions:
 */
-	class AbstractField extends Object
+	defined('IN_LIBRARY') or exit;
+
+	class AbstractField extends View
 	{
-		defined('IN_LIBRARY') or exit;
+	
 		//class variables
-		protected static $_form = Form;
-		protected static $_validators = AbstractValidator();
-		protected static $_processors = AbstractProcessor();
-		protected static $_is_valid = false;
-		protected static $_has_errors = false;
-		protected static $_messages = Message();
-		protected static $_label = Label;
-		protected static $_default_value;
-		protected static $_value;
-		protected static $_processed_value;
+		protected  $_form = Form;
+		protected  $_validators = AbstractValidator();
+		protected  $_processors = AbstractProcessor();
+		protected  $_is_valid = false;
+		protected  $_has_errors = false;
+		protected  $_messages = Message();
+		protected  $_label = Label;
+		protected  $_default_value;
+		protected  $_value;
+		protected  $_processed_value;
 		
 		
 		// Function: __construct()
@@ -44,9 +46,9 @@ namespace Tully
 		}//end __construct()
 	
 		// Function: validate()
-		// Returns:
+		// Returns:a bool representing if the field is valid
 		// Accepts:
-		// Access:
+		// Access: public
 		public static function validate()
 		{
 		
@@ -54,12 +56,17 @@ namespace Tully
 		}//end validate()
 	
 		// Function: __construct()
-		// Returns:
+		// Returns: a bool representing it's been processed
 		// Accepts:
 		// Access:
 		public static function process()
 		{
-		
+		if()
+		{
+		return true;
+		}
+		else 
+		return false;
 		}//end process()
 	
 		// Function: render()

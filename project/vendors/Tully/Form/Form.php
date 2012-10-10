@@ -17,11 +17,11 @@ namespace Tully{
 	
 	//protected class variables
 	//not sure if this part is correct or not
-		protected $_fields = AbstractFields();
-		protected $_processed_fields;
-		protected $_messages;
-		protected $_is_processed = false;
-		protected $_event_handlers = AbstractFields();
+		protected  $_fields = array();
+		protected  $_processed_fields;
+		protected  $_messages;
+		protected  $_is_processed = false;
+		protected  $_event_handlers = AbstractFields();
 		
 	// Function: __construct()
 		// Returns:
@@ -47,22 +47,22 @@ namespace Tully{
 		// Returns:
 		// Accepts:
 		// Access:
-		public static function attachField(Fields $AbstractField)
+		public static function attachField($_fields)
 		{
 		
 		}
 		
-		// Function: __construct()
+		// Function: detachFields()
 		// Returns:
 		// Accepts:
 		// Access:
-		public static function detachFields(Fields $AbstractField)
+		public static function detachFields($_fields)
 		{
 		
 			return false;
 		
-		
-		// Function: __construct()
+		}
+		// Function: render()
 		// Returns: a string
 		// Accepts: N/A
 		// Access: public
@@ -72,11 +72,12 @@ namespace Tully{
 		return $string;
 		}
 		
-		// Function: __construct()
+		// Function: attachEventHandler()
 		// Returns:
 		// Accepts:
 		// Access:
-		public static function attachEventHandler(FormEventHandle)
+		//Q.~~~~~Is this correct?
+		public static function attachEventHandler($_event_handlers)
 		{
 		
 		}
