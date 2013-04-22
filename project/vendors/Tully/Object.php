@@ -4,7 +4,7 @@
 
 <?php
 /**
- * Tully
+ * name space: Tully
  */
 namespace Tully
 {
@@ -14,7 +14,7 @@ namespace Tully
     defined('IN_LIBRARY') or exit;
     
     /**
-     * Name:Object
+     * class name:Object
      */
     class Object
     {
