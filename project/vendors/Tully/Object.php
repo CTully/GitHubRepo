@@ -1,3 +1,7 @@
+//Author: Chris Tully
+//Basic class creation practice.
+
+
 <?php
 /**
  * Tully
@@ -10,22 +14,22 @@ namespace Tully
     defined('IN_LIBRARY') or exit;
     
     /**
-     * Object
+     * Name:Object
      */
     class Object
     {
 	/*
-	*
-	*
+	*name:_toString()
+	*purpose: Returns a instance of the object class as a string. 
 	*/
         final public function __toString()
         {
             return $this->toString();
         }
         
-		/*
-	*
-	*
+	/*
+	*name:_toString()
+	*purpose: Returns a formated instance of the object class as a string.
 	*/		
         public function toString()
         {
